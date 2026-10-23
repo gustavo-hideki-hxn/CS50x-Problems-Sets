@@ -1,5 +1,5 @@
 // Harvard CS50x - Week 5 - Problem Set 5 
-// Recover: https://cs50.harvard.edu/x/psets/5/inheritance/
+// Inheritance: https://cs50.harvard.edu/x/psets/5/inheritance/
 // Base code provided by Harvard
 
 // Simulate genetic inheritance of blood type
