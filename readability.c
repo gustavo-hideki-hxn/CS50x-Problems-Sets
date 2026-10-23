@@ -1,5 +1,5 @@
 // Harvard CS50x - Week 2 - Problem Set 2 
-// Credit: https://cs50.harvard.edu/x/psets/2/readability/
+// Readability: https://cs50.harvard.edu/x/psets/2/readability/
 
 #include <cs50.h>
 #include <ctype.h>
