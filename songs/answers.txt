@@ -1,0 +1,20 @@
+Harvard CS50x - Week 7 - Problem Set 7
+Songs: https://cs50.harvard.edu/x/psets/7/songs/
+
+1. If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+For characterizing their audio aura I would calculate the average of the sum of energy, valence and danceability from the top 100 songs.
+It could be done in SQL as:
+SELECT avg(n)
+FROM (
+    SELECT energy AS n FROM songs
+    UNION ALL
+    SELECT valence FROM songs
+    UNION ALL
+    SELECT danceability FROM songs
+    );
+
+2. Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+The problem is that if the user has two different prominent moods that have opposite "aura" values, average would summarize their "Audio Aura" in a middle value masking its true music preference.
+Then, a better solution could be rounding up the average value of each song to an integer and then calculating the mode of the 100 top songs. This way outliers would not interfere with the result, although it lacks precision.
