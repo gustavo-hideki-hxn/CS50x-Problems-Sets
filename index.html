@@ -1,0 +1,113 @@
+<!-- 
+Harvard CS50x - Week 8 - Problem Set 8
+Trivia: https://cs50.harvard.edu/x/psets/8/trivia/
+Base HTML and CSS code provided by Harvard
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class='header'>
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class='container'>
+            <div class='section'>
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>
+                    Choose the right answer: Servus! Ich bin Gustavo. Wie hei&szlig;t du?
+                </h3>
+                <div id='balloon1' style='visibility: hidden;'></div>
+                <div>
+                    <button id='asw1'>Hallo! Ich komme aus Brasilien.</button>
+                    <button id='asw2'>Hallo! Ich bin Maria.</button>
+                    <button id='asw3'>Hallo! Meine Freund hei&szlig;t Maria.</button>
+                    <button id='asw4'>Hallo! Ich keine hei&szlig;e Maria.</button>
+                </div>
+            </div>
+
+            <div class='section'>
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the translation for: Was sind Sie von Beruf?</h3>
+                <div id='balloon2' style='visibility: hidden;'></div>
+                <div>
+                    <input autocomplete='off' id='asn' type='text'>
+                    <button id='check'>Check answer</button>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            document.querySelector('#asw1').onclick = () => {
+                displayBalloon(balloon1, false);
+                changeColor(asw1, 'red');
+            }
+            document.querySelector('#asw2').onclick = () => {
+                displayBalloon(balloon1, true);
+                changeColor(asw2, 'green');
+            }
+            document.querySelector('#asw3').onclick = () => {
+                displayBalloon(balloon1, false);
+                changeColor(asw3, 'red');
+            }
+            document.querySelector('#asw4').onclick = () => {
+                displayBalloon(balloon1, false);
+                changeColor(asw4, 'red');
+            }
+
+            document.querySelector('#check').onclick = function() {
+                let input = document.querySelector('input').value;
+                if (input == 'What do you do for a living?' || input == 'What is your profession?' || input == 'What do you do?' || input == 'What is your occupation?')
+                {
+                    displayBalloon(balloon2, true);
+                    changeColor(balloon2, 'green');
+                    changeColor(asn, 'green');
+                }
+                else
+                {
+                    displayBalloon(balloon2, false);
+                    changeColor(balloon2, 'red');
+                    changeColor(asn, 'red');
+                }
+            }
+
+            function displayBalloon(balloon, condition)
+            {
+                if (condition == true)
+                {
+                    balloon.style.visibility = 'visible';
+                    balloon.innerHTML = 'Correct!';
+                    changeColor(balloon, 'green');
+                }
+                else if (condition == false)
+                {
+                    balloon.style.visibility = 'visible';
+                    balloon.innerHTML = 'Incorrect';
+                    changeColor(balloon, 'red');
+                }
+            }
+
+            function changeColor(object, color)
+            {
+                if (color == 'red')
+                {
+                    object.style.backgroundColor = '#f69697';
+                }
+                else if (color == 'green')
+                {
+                    object.style.backgroundColor = '#acd8a7';
+                }
+
+            }
+        </script>
+    </body>
+</html>
