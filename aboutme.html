@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3323fdf9ff.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>GHNF - About Me</title>
+    </head>
+    <body>
+        <div class="site-about-me">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="">GHNF</a>
+
+                    <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="aboutme.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cars.html">Car Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Cooking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Gears</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn btn-link navbar-btn">
+                        <span onclick="darkMode()" class="fa-regular fa-moon" style="color: white;height:20px;width:20px"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <header class="cover">
+                <img class="cover-image" src="images/aboutme-cover.png" alt="TUM, FE & POLI cover image">
+            </header>
+
+            <div class="title">
+                <h1>Nice to meet you!</h1>
+            </div>
+
+            <div class="body-text">
+                <p>
+                    A quick resume of my history so far. (<a href="projects.html">Projects</a> will be better described on its page!)
+                </p>
+                <div>
+                <p>
+                    Hi! My name is Gustavo Hideki. I am 21 and currently living in Munich. I am Brazilian, from the city of São Paulo, where I lived most of my life until moving to Germany.
+                </p>
+                <p>
+                    My main passions are tech and cars, though I consider myself a person of many interests. In a broader sense, I am very detailist, so I appreciate everything that took a good amount of effort to create. For example, after moving out of my parents' home, I started to really get into cooking and learning the fundamental recipes.
+                    I also like reading self-development and learning-focused books, and I am now planning to start publishing some of my notes online, drawn from classes, books, and past experiences (both to share with and to learn from other people).
+                </p>
+                <p>
+                    In my home country, I did a bachelor's degree (BSc) at <a href="https://www.poli.usp.br/en/">Escola Politécnica da Universidade de São Paulo</a> (POLI-USP), where I took part in the Formula SAE team, <a href="https://www.instagram.com/equipepoliracing/?hl=en">Equipe Poli Racing</a>. I joined the team in my very first semester and worked with them for 3.5 years, going from trainee to vice-captain. Needless to say, I fell in love with the project.
+                </p>
+                <p>
+                    Today, I am studying for a Master's degree in Automotive Engineering at the <a href="https://www.tum.de/">Technical University of Munich (TUM)</a> in a double degree program with my home university. In parallel, I am also working at <a href="https://hexagonsports.com.br/en/">Hexagon Sports</a>, a Brazilian startup focused on developing the biggest sports social media platform on the internet.
+                    Right now, our main product is the Highlight Engine, which lets you easily capture the best moments of your games. Since this is a different field from my degree, I am starting by deepening my coding and software knowledge (beginning with CS50x, which is what this website is being built for).
+                </p>
+                <p>
+                    Last but not least, I am part of <a href="https://www.estudar.org.br/">Fundação Estudar</a>, the most competitive scholarship program in Brazil, where a community of more than 1,000 fellows is shaping the next innovations and development of the country (and of the world). There, I met some of the most brilliant minds I have ever encountered, which broadened my perspective in a way I cannot describe.
+                </p>
+                <p>
+                    As for the next steps, I am committed to helping Hexagon grow into the next Brazilian unicorn, while also looking for opportunities at the intersection of the automotive field and cutting-edge technology (or even all of them combined!).
+                </p>
+            </div>
+
+                <p>
+                    In short, this is my timeline:
+                </p>
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-column">
+                    <h2>Education:</h2>
+
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h3>MSc Automotive Engineering</h3>
+                        <small>Technical University of Munich (TUM) | 2026 - now | Germany</small>
+                        <p>Autonomous and electric vehicle technology</p>
+                        <p>Product Development and Systems</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h3>BSc Mechanical Engineering</h3>
+                        <small>Escola Politécnica da USP (POLI-USP) | 2023 - (2028) | Brazil</small>
+                        <p>1 of 4 - Double Degree at TUM</p>
+                        <p>Top 11 class rank</p>
+                        <p>3.5 years in FSAE Competition team</p>
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <h2>Experience</h2>
+
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h3>Development/managment intern</h3>
+                        <small>Hexagon Sports | 2026 - now | Online</small>
+                        <p>External cameras integration</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h3>Fellow student</h3>
+                        <small>Fundação Estudar | 2026 - now | Brazil/Germany</small>
+                        <p>Brazil's most competitive scholarship program (1 of 48, 0,3%)</p>
+                        <p>Full scholarship for MSc and several mentoring with Brazillian top names</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h3>FSAE team member</h3>
+                        <small>Equipe Poli Racing (EPR) | 2023 - 2026 | Brazil</small>
+                        <p>Team evolution from 19th to 3rd in 2 years</p>
+                        <p>Team leader (vice-capitain/vehicle dynamics director) in 2026</p>
+                        <p>Suspension designer (Unsprung mass) in 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                Copyright&#169; GHNF | ghnferrante@gmail.com | 2026
+            </footer>
+        </div>
+
+        <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        </script>
+
+    </body>
+</html>
