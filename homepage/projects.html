@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3323fdf9ff.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>GHNF - Projects</title>
+    </head>
+    <body>
+        <div class="site-projects">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="">GHNF</a>
+                    <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutme.html">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cars.html">Car Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Cooking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Gears</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-link navbar-btn">
+                        <span onclick="darkMode()" class="fa-regular fa-moon" style="color: white;height:20px;width:20px"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <header class="cover">
+                <img class="cover-image" src="images/FP17-cover.JPG" alt="FP17 cover image">
+            </header>
+
+            <div class="title">
+                    <h1>My portifolio</h1>
+            </div>
+
+
+            <div class="body-text">
+                <div id="projects">
+                    <button type="button" class="collapsible" data-bs-toggle="collapse" data-bs-target="#fp17" aria-expanded="false" aria-controls="fp17">
+                        FP17: the dream
+                    </button>
+
+                    <div class="collapse" id="fp17" data-bs-parent="projects">
+                        <div class="project-card">
+                            <div id="fp17-carousel" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#fp17-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
+                                    <button type="button" data-bs-target="#fp17-carousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+                                    <button type="button" data-bs-target="#fp17-carousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/FP17.1.JPG" alt="FSAE Trophies">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP17.2.JPG" alt="Professor celebration">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP17.3.JPG" alt="Bring back home">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#fp17-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#fp17-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <div class="project-card-text">
+                                <p>The podium prototype. Best historical score of team, jumping from 9th to 3rd.</p>
+                                <p>4th and last cycle where I performed the role of Vehicle Dynamics Director, one of 4 competition drivers, Cost Report adminstrator and trained the suspension & brakes team.
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="collapsible" data-bs-toggle="collapse" data-bs-target="#fp16" aria-expanded="false" aria-controls="fp16">
+                        FP16: the recover
+                    </button>
+
+                    <div class="collapse" id="fp16" data-bs-parent="projects">
+                        <div class="project-card">
+                            <div id="fp16-carousel" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#fp16-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
+                                    <button type="button" data-bs-target="#fp16-carousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+                                    <button type="button" data-bs-target="#fp16-carousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
+                                    <button type="button" data-bs-target="#fp16-carousel" data-bs-slide-to="3" aria-label="Photo 4"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/FP16.1.JPG" alt="FP16 lateral view">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP16.2.jpeg" alt="FP16 competition">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP16.3.jpeg" alt="FP16 competition #2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP16.4.jpeg" alt="FP16 team">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#fp16-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#fp16-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <div class="project-card-text">
+                                <p>Back to finishing the endurance race, after 11 years. Moving up from 19ht to 9th.</p>
+                                <p>My 3rd cycle, where I was Suspension Head, upright mass designer and Cost Report co-director.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="collapsible" data-bs-toggle="collapse" data-bs-target="#fp15" aria-expanded="false" aria-controls="fp15">
+                        FP15: Murphy's Law
+                    </button>
+
+                    <div class="collapse" id="fp15" data-bs-parent="projects">
+                        <div class="project-card">
+                            <div id="fp15-carousel" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#fp15-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
+                                    <button type="button" data-bs-target="#fp15-carousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/FP15.1.jpg" alt="FP15">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP15.2.jpg" alt="FP15 competition">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#fp15-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#fp15-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <div class="project-card-text">
+                                <p>When trying is not enought. Several reliability problems on powertrain and electronics took us out of 2 races, including the endurance. Fell from 11th to 19th.</p>
+                                <p>My first complete cycle, where I was suspension member, helping on manufacturing, testing and organization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <button type="button" class="collapsible" data-bs-toggle="collapse" data-bs-target="#fp14" aria-expanded="false" aria-controls="fp14">
+                        FP14: the beginning
+                    </button>
+
+                    <div class="collapse" id="fp14" data-bs-parent="projects">
+                        <div class="project-card">
+                            <div id="fp14-carousel" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#fp14-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Photo 1"></button>
+                                    <button type="button" data-bs-target="#fp14-carousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/FP14.1.jpg" alt="FP14 competition">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/FP14.2.jpg" alt="FP14 team">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#fp14-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#fp14-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <div class="project-card-text">
+                                <p>My first prototype and competition. Moving up from 14th to 11th.</p>
+                                <p>Freshman year, discovering what is FSAE and what is Equipe Poli Racing. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                Copyright&#169; GHNF | ghnferrante@gmail.com | 2026
+            </footer>
+        </div>
+
+        <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        </script>
+    </body>
+</html>

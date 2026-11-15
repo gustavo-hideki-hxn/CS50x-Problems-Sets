@@ -1,0 +1,12 @@
+// Harvard CS50x - Week 8 - Problem Set 8 
+// Credit: https://cs50.harvard.edu/x/psets/8/homepage/
+// Implementation and functions research done with Claude Sonnet 5.5 - Medium
+
+HTML tags (10, besides <html>, <head>, <body>, and <title>): <link>, <script>, <div>, <nav>, <a>, <button>, <ul>, <li>, <span>, <img>, <h1>, <p>, <footer>, <h2>, <small>, <h3>.
+
+CSS properties: color, background-color, padding, border-color, height, overflow, display, width, object-fit, object-posiiton, margin, text-align, font-family, font-weight, font-size, position, ...
+
+JavaScript usage: JavaScript is used for dark mode logic and smooth height transition in car gallery photos.
+
+Bootstrap usage: Bootstrap is used in navbar and grid display.
+
