@@ -1,0 +1,58 @@
+<!-- Harvard CS50x - Week 9 - Problem Set 9 
+# Birthdays: https://cs50.harvard.edu/x/psets/9/birthdays/
+# Base code and template provided by Harvard-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Add a Birthday</h2>
+                <form action="/" method="POST">
+                    <input name="name" placeholder="Enter name" type="text">
+                    <input name="month" placeholder="Enter month" type="number" min="1" max="12">
+                    <input name="day" placeholder="Enter day" type="number" min="1" max="31">
+                    <input type="submit" value="Add Birthday">
+                </form>
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for birthday in birthdays %}
+                            <tr>
+                                <td>{{ birthday.name }}</td>
+                                <td>{{ birthday.month }} / {{ birthday.day }}</td>
+                                <td id="delete">
+                                    <form action="/deregister" method="post">
+                                        <input name="id" type="hidden" value='{{ birthday.id}}'>
+                                        <button type="submit">Delete entry</button>
+                                    </form>
+                                </tr>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
